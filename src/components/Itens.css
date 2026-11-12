@@ -451,7 +451,6 @@ overflow-wrap: anywhere;
 .item-card-descricao {
 display: -webkit-box;
 -webkit-box-orient: vertical;
--webkit-line-clamp: 2;
 overflow: hidden;
 min-height: 39px;
 margin: 0;
