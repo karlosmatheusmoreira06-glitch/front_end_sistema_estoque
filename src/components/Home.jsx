@@ -7,7 +7,7 @@ const Home = () => {
             <header className="home-header">
                 <div className="home-logo">
                     <span>GE</span>
-                    <strong>Gestão de Estoque</strong>
+                    <strong>KKKKK</strong>
                 </div>
             </header>
 
