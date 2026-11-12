@@ -1,0 +1,280 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+.cadastro-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(96, 165, 250, 0.15),
+            transparent 35%
+        ),
+        #f1f5f9;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+}
+
+.cadastro-page * {
+    box-sizing: border-box;
+}
+
+/* ==============================
+   CARTÃO
+============================== */
+
+.cadastro-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 38px;
+
+    background: #ffffff;
+    border: 1px solid #e5eaf2;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+
+    animation: cadastroEntrada 0.4s ease;
+}
+
+/* ==============================
+   ÍCONE
+============================== */
+
+.cadastro-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* ==============================
+   TÍTULOS
+============================== */
+
+.cadastro-card h1 {
+    margin: 0 0 10px;
+
+    color: #172033;
+    font-size: 28px;
+    font-weight: 750;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.cadastro-subtitulo {
+    margin: 0 0 30px;
+
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ==============================
+   FORMULÁRIO
+============================== */
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cadastro-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cadastro-campo label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.cadastro-campo input {
+    width: 100%;
+    min-height: 48px;
+    padding: 13px 14px;
+
+    border: 1px solid #dbe3ef;
+    border-radius: 10px;
+    outline: none;
+
+    background: #f8fafc;
+    color: #172033;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.cadastro-campo input::placeholder {
+    color: #94a3b8;
+}
+
+.cadastro-campo input:hover {
+    border-color: #b8c5d8;
+}
+
+.cadastro-campo input:focus {
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* ==============================
+   BOTÃO CADASTRAR
+============================== */
+
+.cadastro-botao {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 4px;
+    padding: 13px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.18);
+
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cadastro-botao:hover {
+    background: #1d4ed8;
+    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.24);
+    transform: translateY(-1px);
+}
+
+.cadastro-botao:active {
+    transform: translateY(0);
+}
+
+.cadastro-botao:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* ==============================
+   RODAPÉ / LOGIN
+============================== */
+
+.cadastro-rodape {
+    margin-top: 26px;
+    padding-top: 22px;
+
+    border-top: 1px solid #edf0f5;
+    text-align: center;
+}
+
+.cadastro-rodape p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.cadastro-rodape a {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cadastro-rodape a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* ==============================
+   ANIMAÇÃO
+============================== */
+
+@keyframes cadastroEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 480px) {
+    .cadastro-page {
+        padding: 20px 14px;
+    }
+
+    .cadastro-card {
+        padding: 28px 22px;
+        border-radius: 16px;
+    }
+
+    .cadastro-card h1 {
+        font-size: 25px;
+    }
+
+    .cadastro-icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 18px;
+    }
+
+    .cadastro-subtitulo {
+        margin-bottom: 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cadastro-card {
+        animation: none;
+    }
+
+    .cadastro-botao,
+    .cadastro-campo input,
+    .cadastro-rodape a {
+        transition: none;
+    }
+}
+

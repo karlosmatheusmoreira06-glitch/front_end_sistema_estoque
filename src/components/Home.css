@@ -1,0 +1,181 @@
+.home-container {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 24px 20px;
+    background: linear-gradient(135deg, #f5f7fb, #e8efff);
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.home-logo span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.home-logo strong {
+    color: #172554;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.home-content {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    animation: home-appear 0.7s ease;
+}
+
+.home-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: #dce8ff;
+    color: #2458c6;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.home-content h1 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.home-content h1 span {
+    color: #3268db;
+}
+
+.home-content p {
+    max-width: 480px;
+    margin: 22px 0 32px;
+    color: #667085;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.home-login-button {
+    min-width: 180px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #3268db;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(50, 104, 219, 0.22);
+    transition: background 0.2s ease, transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.home-login-button:hover {
+    background: #2454bd;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(50, 104, 219, 0.3);
+}
+
+.home-login-button:focus-visible {
+    outline: 3px solid #91b4ff;
+    outline-offset: 4px;
+}
+
+.home-footer {
+    text-align: center;
+    color: #8791a3;
+    font-size: 13px;
+}
+
+.home-footer p {
+    margin: 0;
+}
+
+@keyframes home-appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 25px 20px 18px;
+    }
+
+    .home-logo span {
+        width: 44px;
+        height: 44px;
+        font-size: 17px;
+    }
+
+    .home-logo strong {
+        font-size: 17px;
+    }
+
+    .home-content h1 {
+        letter-spacing: -0.8px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+    }
+
+    .home-login-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-content {
+        animation: none;
+    }
+
+    .home-login-button {
+        transition: none;
+    }
+}

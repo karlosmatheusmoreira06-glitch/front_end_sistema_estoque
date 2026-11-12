@@ -1,0 +1,140 @@
+.login-pagina {
+min-height: 100vh !important;
+display: flex !important;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 24px;
+background: linear-gradient(135deg, #dbeafe, #eff6ff) !important;
+font-family: Arial, sans-serif;
+box-sizing: border-box;
+}
+
+.login-card {
+width: 100%;
+max-width: 420px;
+padding: 35px;
+background: white !important;
+border: 1px solid #dbeafe;
+border-radius: 20px;
+box-shadow: 0 15px 45px rgba(37, 99, 235, 0.15);
+box-sizing: border-box;
+}
+
+.login-logo {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+height: 60px;
+margin: 0 auto 20px;
+border-radius: 16px;
+background: #2563eb !important;
+color: white !important;
+font-weight: bold;
+font-size: 22px;
+}
+
+.login-card h1 {
+text-align: center;
+color: #172554;
+font-size: 27px;
+}
+
+.login-subtitulo,
+.login-cadastro,
+.login-rodape {
+text-align: center;
+color: #64748b;
+}
+
+.login-campo {
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin: 20px 0;
+}
+
+.login-campo label {
+color: #334155;
+font-weight: bold;
+}
+
+.login-campo input {
+width: 100%;
+padding: 13px;
+border: 1px solid #cbd5e1;
+border-radius: 9px;
+box-sizing: border-box;
+}
+
+.login-botao {
+width: 100%;
+padding: 14px;
+border: none;
+border-radius: 9px;
+background: #2563eb !important;
+color: white !important;
+font-weight: bold;
+cursor: pointer;
+}
+
+.login-botao:hover {
+background: #1d4ed8 !important;
+}
+
+.login-cadastro a {
+color: #2563eb;
+font-weight: bold;
+text-decoration: none;
+}
+
+.login-rodape {
+margin-top: 20px;
+font-size: 12px;
+}
+
+@media (max-width: 480px) {
+.login-pagina {
+    padding: 16px 12px;
+}
+
+.login-card {
+    padding: 26px 20px;
+    border-radius: 16px;
+}
+
+.login-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.login-card h1 {
+    font-size: 24px;
+}
+
+.login-subtitulo,
+.login-cadastro,
+.login-rodape {
+    font-size: 13px;
+}
+
+.login-campo {
+    margin: 16px 0;
+}
+
+.login-campo label {
+    font-size: 13px;
+}
+
+.login-campo input {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.login-botao {
+    padding: 13px;
+    font-size: 14px;
+}
+}
