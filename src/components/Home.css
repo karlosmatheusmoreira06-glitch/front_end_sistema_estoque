@@ -157,7 +157,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .home-container {
         padding: 25px 20px 18px;
     }
