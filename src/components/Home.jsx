@@ -35,4 +35,5 @@ const Home = () => {
     );
 };
 
+// Forçar redeploy no Vercel - correção de estilos CSS
 export default Home;
